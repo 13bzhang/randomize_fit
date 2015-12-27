@@ -4,7 +4,7 @@ import smtplib
 import random
  
 # set up server info
-server = smtplib.SMTP('STMP ADDRESS', PORT_NUMBER)
+server = smtplib.SMTP("STMP ADDRESS", PORT_NUMBER)
 server.starttls()
 server.login("SENDER EMAIL ADDRESS", "EMAIL PASSWORD")
 
@@ -21,7 +21,7 @@ else:
 	msg_text = "Good morning! You don't have to exercise today." \
 	" Enjoy your day off! Thank you for using Randomize Fit."
 
-message = 'Subject: %s\n\n%s' % (subject_text, msg_text)
+message = "Subject: %s\n\n%s" % (subject_text, msg_text)
 
 recipients = ["EMAIL OF RECIPIENTS"]
 
