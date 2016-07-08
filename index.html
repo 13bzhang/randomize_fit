@@ -1,0 +1,35 @@
+---
+layout: default
+title: Baobao Zhang
+---
+
+		<div class="blurb">
+			<h1>Randomize Fit</h1>
+			<h2>An experiment in health</h2>
+
+			
+
+			<p>Randomize Fit will send you an email reminder each morning to exercise for a randomly assigned number of minutes.</p>
+
+
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1U9skEVyk9cY1oukZaKqPamSQq-ckH3Mj2jPlN1cQ0ak/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+  Name:<br>
+  <input type="text" name="entry.1794218122" id="entry.1794218122"><br>
+  Email:<br>
+  <input type="text" name="entry.136463686" id="entry.136463686">
+  <input type="submit" value="Submit">
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend("Let's get fit!");
+  });
+</script>
+			
+		</div> 
