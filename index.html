@@ -16,6 +16,7 @@ title: Randomize Fit
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1U9skEVyk9cY1oukZaKqPamSQq-ckH3Mj2jPlN1cQ0ak/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
   Name:<br>
   <input type="text" name="entry.1794218122" id="entry.1794218122"><br>
+  <br>
   Email:<br>
   <input type="text" name="entry.136463686" id="entry.136463686">
   <input type="submit" value="Submit">
@@ -23,11 +24,14 @@ title: Randomize Fit
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
+<br>
+
 <p>
 <script src="http://13bzhang.github.io/randomize_fit/assets/js/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
   $('#gform').prepend("Let's get fit!");
   });
 </script>
